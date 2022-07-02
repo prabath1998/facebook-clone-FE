@@ -2,6 +2,13 @@ import Image from "next/image";
 import React from "react";
 import { ImUsers } from "react-icons/im";
 import SidebarItem from "./SidebarItem";
+import {
+  MdGroups,
+  MdOutlineOndemandVideo,
+  MdOutlineExpandMore,
+} from "react-icons/md";
+import { AiOutlineShop } from "react-icons/ai";
+import { BsStopwatch } from "react-icons/bs";
 
 const Sidebar = () => {
   return (
@@ -15,7 +22,12 @@ const Sidebar = () => {
         />
         <p className="hidden sm:inline-flex font-medium">Prabath Udayanga</p>
       </div>
-      <SidebarItem Icon={ImUsers} Value="Users"/>
+      <SidebarItem Icon={ImUsers} Value="Users" />
+      <SidebarItem Icon={MdGroups} Value="Groups" />
+      <SidebarItem Icon={AiOutlineShop} Value="MarketPlace" />
+      <SidebarItem Icon={MdOutlineOndemandVideo} Value="Watch" />
+      <SidebarItem Icon={BsStopwatch} Value="Memeries" />
+      <SidebarItem Icon={MdOutlineExpandMore} Value="See more" />
     </div>
   );
 };
