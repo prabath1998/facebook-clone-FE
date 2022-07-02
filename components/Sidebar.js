@@ -15,7 +15,7 @@ const Sidebar = () => {
         />
         <p className="hidden sm:inline-flex font-medium">Prabath Udayanga</p>
       </div>
-      <SidebarItem />
+      <SidebarItem Icon={ImUsers} Value="Users"/>
     </div>
   );
 };
