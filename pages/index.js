@@ -6,6 +6,7 @@ import Login from "../components/Login";
 // import RightSidebar from "../components/RightSidebar";
 import Sidebar from "../components/Sidebar";
 import Feed from "../components/Feed";
+import RightSidebar from "../components/RightSidebar";
 
 export default function Home({ session }) {
   if (!session) return <Login />;
@@ -23,7 +24,7 @@ export default function Home({ session }) {
         {/* Feed */}
         <Feed />
         {/* Right Sidebar */}
-        {/* <RightSidebar /> */}
+        <RightSidebar />
       </main>
     </div>
   );
